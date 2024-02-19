@@ -1,9 +1,10 @@
 {
-  "name": "atm",
-  "version": "1.0.0",
+  "name": "kainat-atm",
+  "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
+  "bin" : "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import inquirer from "inquirer";
 interface anstype {
    userID : string,
@@ -19,20 +21,18 @@ const answer : anstype = await inquirer.prompt([
         message: "kindly entre your pin"
     },
     {
-type: "list",
-name: "accounttype",
-choices: ["current","saving"],
-message: "select your account  type"
+        type: "list",
+        name: "accounttype",
+        choices: ["current","saving"],
+        message: "select your account  type"
     },
-{
+    {
     type: "list",
     name: "transactionType",
     choices: ["fast cash","withdrawal"],
     message:"select your transaction",
-    when(answer){
-        return answer.accounttype
+   
     },
-},
 {
     type: "list",
     name: "amount",
@@ -43,7 +43,7 @@ message: "select your account  type"
     },
 },
 {
-    type: "list",
+    type: "input",
     name: "amount",
     message:"entre your amount",
     when(answer){

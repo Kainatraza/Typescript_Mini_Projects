@@ -1,21 +1,22 @@
 {
-  "name": "oop-mybank",
-  "version": "1.0.0",
+  "name": "kainat-bank-oop",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
+  "bin": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "@faker-js/faker": "^8.4.1",
-    "chalk": "^4.1.2",
-    "inquirer": "^9.2.14"
+    "@faker-js/faker": "^8.2.0",
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.11"
   },
   "devDependencies": {
-    "@types/inquirer": "^9.0.7"
+    "@types/inquirer": "^9.0.6"
   }
 }

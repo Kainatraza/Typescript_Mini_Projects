@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
     {
@@ -21,9 +22,6 @@ const answer = await inquirer.prompt([
         name: "transactionType",
         choices: ["fast cash", "withdrawal"],
         message: "select your transaction",
-        when(answer) {
-            return answer.accounttype;
-        },
     },
     {
         type: "list",
@@ -35,7 +33,7 @@ const answer = await inquirer.prompt([
         },
     },
     {
-        type: "list",
+        type: "input",
         name: "amount",
         message: "entre your amount",
         when(answer) {
