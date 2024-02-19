@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import inquirer from "inquirer";  
 type anstype = {
     userGuess : number
@@ -9,11 +11,11 @@ const answer : anstype =  await inquirer.prompt([
     {
         type : "number",
         name : "userGuess",
-        message : "write your guess b\w 1 to 11"
+        message : "write your guess between 1 to 11"
     }
 ])
 const {userGuess} = answer;
-console.log (userGuess,"userGuess", systemgeneratedno ,"sys")
+console.log ("User Guess Number:",userGuess,"\n","System Guess Number", systemgeneratedno ,)
 if (userGuess === systemgeneratedno){
     console.log("yeh your answer is correct congratulations you win!")
 }else {
